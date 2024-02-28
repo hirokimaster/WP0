@@ -8,7 +8,6 @@ void ModelScene::Initialize()
 	worldTransformAxis_.Initialize();
 	texHandleUV_ = TextureManager::Load("resources/uvChecker.png");
 	texHandleMonsterBall_ = TextureManager::Load("resources/monsterBall.png");
-	texHandleCircle_ = TextureManager::Load("resources/circle.png");
 	ModelManager::GetInstance()->LoadObjModel("axis.obj");
 	ModelManager::GetInstance()->LoadObjModel("cube.obj");
 
@@ -26,9 +25,9 @@ void ModelScene::Initialize()
 	emit.frequencyTime = 0.0f;
 	particle2_ = std::make_unique<ParticleSystem>();
 	particle2_->Initialize("cube.obj");
-	particle2_->SetTexHandle(texHandleCircle_);
+	particle2_->SetTexHandle(texHandleMonsterBall_);
 	particle1_ = std::make_unique<ParticleSystem>();
-	particle1_->Initialize("plane.obj");
+	particle1_->Initialize("cube.obj");
 	particle1_->SetTexHandle(texHandleUV_);
 	accelerationField.acceleration = { 15.0f, 0.0f,0.0f };
 	accelerationField.area.min = { -1.0f,-1.0f,-1.0f };

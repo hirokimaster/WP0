@@ -3,9 +3,9 @@
 void SpriteScene::Initialize()
 {
 	texHandleUV_ = TextureManager::Load("resources/uvChecker.png");
-	texHandleMonsterBall_ = TextureManager::Load("resources/monsterBall.png");
+	texHandleCircle_ = TextureManager::Load("resources/circle.png");
 	spriteUV_.reset(Sprite::Create(texHandleUV_));
-	spriteMonsterBall_.reset(Sprite::Create(texHandleMonsterBall_, { 512.0f,0 }));
+	spriteCircle_.reset(Sprite::Create(texHandleCircle_, { 550.0f,0 }));
 }
 
 void SpriteScene::Update()
@@ -19,12 +19,12 @@ void SpriteScene::Update()
 #endif // _DEBUG
 
 	if (Input::GetInstance()->PressedKey(DIK_SPACE)) {
-		GameManager::GetInstance()->ChangeScene("SPRITESCENE");
+		GameManager::GetInstance()->ChangeScene("MODELSCENE");
 	}
 }
 
 void SpriteScene::Draw()
 {
 	spriteUV_->Draw();
-	spriteMonsterBall_->Draw();
+	spriteCircle_->Draw();
 }

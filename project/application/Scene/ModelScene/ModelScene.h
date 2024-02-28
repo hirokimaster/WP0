@@ -30,7 +30,6 @@ private:
 	std::list<Particle> particles2_ = {};
 	std::unique_ptr<ParticleSystem> particle1_ = {};
 	std::unique_ptr<ParticleSystem> particle2_ = {};
-	uint32_t texHandleCircle_ = 0;
 	const float dt = 1.0f / 60.0f;
 	Emitter emit{};
 	AccelerationField accelerationField{};
