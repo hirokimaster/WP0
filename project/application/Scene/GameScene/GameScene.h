@@ -1,9 +1,9 @@
 #pragma once
 #include "application/Scene/IScene/IScene.h"
 #include "engine/Sprite/Sprite.h"
-#include "engine/Model/Model.h"
 #include "engine/Input/Input.h"
 #include "engine/PostProcess/PostProcess.h"
+#include "engine/ModelManager/ModelManager.h"
 
 class GameScene : public IScene {
 public: // メンバ関数
@@ -38,6 +38,4 @@ public: // メンバ関数
 	void PostProcessDraw()override;
 
 private:
-	uint32_t a = 0;
-	uint32_t b = 0;
 };

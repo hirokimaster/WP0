@@ -10,8 +10,6 @@ GameScene::~GameScene()
 
 void GameScene::Initialize()
 {
-	a = TextureManager::Load("resources/uvChecker.png");
-	b = TextureManager::Load("resources/monsterBall.png");
 }
 
 void GameScene::Update()

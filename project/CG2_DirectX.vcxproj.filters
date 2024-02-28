@@ -95,6 +95,24 @@
     <Filter Include="Engine\ParticleSystem">
       <UniqueIdentifier>{d5cc0c80-c018-4e8d-a273-03ebce3fca9a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Engine\PostProcess">
+      <UniqueIdentifier>{58b10758-ea45-4dc5-a064-c2a93994d57f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\DescriptorManager">
+      <UniqueIdentifier>{66c04d68-701f-4050-9af8-c45b0efcde38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\DescriptorManager\SrvManager">
+      <UniqueIdentifier>{199b1465-a563-4739-aa11-c2d0b112650f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Shader\ModelManager">
+      <UniqueIdentifier>{8ed9edd5-32ca-4215-9233-ecf2cedc3e32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\Scene\ModelScene">
+      <UniqueIdentifier>{2ebbee65-f980-418e-9379-af261dd913f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\Scene\SpriteScene">
+      <UniqueIdentifier>{1e7b377a-79e2-4572-9fd0-fe70dea00786}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -200,16 +218,22 @@
       <Filter>Engine\ParticleSystem</Filter>
     </ClCompile>
     <ClCompile Include="engine\PostProcess\PostProcess.cpp">
-      <Filter>Engine</Filter>
-    </ClCompile>
-    <ClCompile Include="engine\DescriptorManager\DescriptorManager.cpp">
-      <Filter>Engine</Filter>
-    </ClCompile>
-    <ClCompile Include="engine\ModelManager\ModelManager.cpp">
-      <Filter>Engine</Filter>
+      <Filter>Engine\PostProcess</Filter>
     </ClCompile>
     <ClCompile Include="engine\DescriptorManager\SRVManager\SrvManager.cpp">
-      <Filter>Engine</Filter>
+      <Filter>Engine\DescriptorManager\SrvManager</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\DescriptorManager\DescriptorManager.cpp">
+      <Filter>Engine\DescriptorManager</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\ModelManager\ModelManager.cpp">
+      <Filter>Engine\Shader\ModelManager</Filter>
+    </ClCompile>
+    <ClCompile Include="application\Scene\ModelScene\ModelScene.cpp">
+      <Filter>Application\Scene\ModelScene</Filter>
+    </ClCompile>
+    <ClCompile Include="application\Scene\SpriteScene\SpriteScene.cpp">
+      <Filter>Application\Scene\SpriteScene</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -342,10 +366,24 @@
     <ClInclude Include="Engine\ParticleSystem\ParticleSystem.h">
       <Filter>Engine\ParticleSystem</Filter>
     </ClInclude>
-    <ClInclude Include="engine\PostProcess\PostProcess.h" />
-    <ClInclude Include="engine\DescriptorManager\DescriptorManager.h" />
-    <ClInclude Include="engine\ModelManager\ModelManager.h" />
-    <ClInclude Include="engine\DescriptorManager\SRVManager\SrvManager.h" />
+    <ClInclude Include="engine\PostProcess\PostProcess.h">
+      <Filter>Engine\PostProcess</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\DescriptorManager\SRVManager\SrvManager.h">
+      <Filter>Engine\DescriptorManager\SrvManager</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\DescriptorManager\DescriptorManager.h">
+      <Filter>Engine\DescriptorManager</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\ModelManager\ModelManager.h">
+      <Filter>Engine\Shader\ModelManager</Filter>
+    </ClInclude>
+    <ClInclude Include="application\Scene\ModelScene\ModelScene.h">
+      <Filter>Application\Scene\ModelScene</Filter>
+    </ClInclude>
+    <ClInclude Include="application\Scene\SpriteScene\SpriteScene.h">
+      <Filter>Application\Scene\SpriteScene</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <FxCompile Include="resources\ShaderFile\Object3d.PS.hlsl">
@@ -378,8 +416,12 @@
     <FxCompile Include="resources\ShaderFile\SpotLight.VS.hlsl">
       <Filter>Engine\Shader</Filter>
     </FxCompile>
-    <FxCompile Include="resources\ShaderFile\PostEffectTest.PS.hlsl" />
-    <FxCompile Include="resources\ShaderFile\PostEffectTest.VS.hlsl" />
+    <FxCompile Include="resources\ShaderFile\PostEffectTest.PS.hlsl">
+      <Filter>Engine\Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="resources\ShaderFile\PostEffectTest.VS.hlsl">
+      <Filter>Engine\Shader</Filter>
+    </FxCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="resources\ShaderFile\Object3d.hlsli">

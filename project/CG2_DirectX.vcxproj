@@ -147,6 +147,8 @@ copy "$(WindowsSdkdir)bin\$(TargetPlatformVersion)\x64\dxil.dll" "$(TargetDir)dx
     <ClCompile Include="Engine\Camera\Camera.cpp" />
     <ClCompile Include="Engine\Base\WinApp\WinApp.cpp" />
     <ClCompile Include="Engine\Transform\WorldTransform.cpp" />
+    <ClCompile Include="application\Scene\ModelScene\ModelScene.cpp" />
+    <ClCompile Include="application\Scene\SpriteScene\SpriteScene.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="application\GameManager\GameManager.h" />
@@ -196,6 +198,8 @@ copy "$(WindowsSdkdir)bin\$(TargetPlatformVersion)\x64\dxil.dll" "$(TargetDir)dx
     <ClInclude Include="Engine\Camera\Camera.h" />
     <ClInclude Include="Engine\Base\WinApp\WinApp.h" />
     <ClInclude Include="Engine\Transform\WorldTransform.h" />
+    <ClInclude Include="application\Scene\ModelScene\ModelScene.h" />
+    <ClInclude Include="application\Scene\SpriteScene\SpriteScene.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="resources\ShaderFile\Object3d.hlsli">
